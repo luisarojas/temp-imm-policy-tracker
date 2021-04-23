@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
             res = check_diff()
             if res["length-changed"]:
-                print(f'\033[91mThe number of sections boxes has changed\033[0m')
+                print(f'\033[91mUnable to find HTML objects\033[0m')
                 send_email(res['html'])
                 sys.exit(0)
             elif res["content-changed"]:
